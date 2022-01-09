@@ -1,0 +1,95 @@
+* {
+    box-sizing;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    position: relative;
+    background: rgb(236, 234, 234);
+    margin: auto;
+    padding: 25px; 
+}
+
+header {
+    margin-left: 50px;
+    font-size: small;
+    color:rgba(41, 40, 40, 0.664)
+}
+  
+
+.grid-container { 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card {
+    background-color: #f8f5f5;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 33%;
+    max-width: 400px;
+    min-width: 325px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    border: 2px solid rgb(209, 208, 208);
+    border-radius: 5px;
+    text-align: left;
+}
+
+.avatar{
+    border-radius: 50%;
+    height: auto;
+    margin: 20px;
+    width: auto
+
+}
+
+.text-container {
+  align-self: center;
+}
+
+
+.text-container p {
+   font-weight: 300;
+}
+
+
+.name {
+    font-weight: 500;
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(100, 100, 100, 0.664);
+}
+
+.modal {
+    width: 420px;
+    margin: 15% auto auto;
+    position: relative;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #778;
+    border-radius: 5px;
+    padding: 30px 20px;
+  }
+
+.modal-close {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+  
+
