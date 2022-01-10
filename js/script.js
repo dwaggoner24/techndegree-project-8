@@ -18,7 +18,7 @@ fetch(urlAPI)
 
 //Function to display random employees in cards//
 function displayEmployees(employeeData){
-    const employees = employeeData;
+    employees = employeeData;
     let employedHTML = ''; //will contain HTML markup for employee data
 
     //loop through each employee in employees variable//
@@ -49,13 +49,13 @@ function displayModal(index){
     const modalHTML = `
         <img class="avatar" src="${picture.large}" />
         <div class="text-container">
-            <h2 class="name"${name.first} ${name.last}</h2>
+            <h2 class="name">${name.first} ${name.last}</h2>
             <p class="email">${email}</p>
             <p class="address">${city}</p>
             <hr />
             <p>${phone}</p>
             <p class="address">${street.number} ${street.name}, ${state} ${postcode}</p>
-            <p>Birthday: ${date.getMonth()}/${date.getDate()}/${date.getFullYear()}/</p>
+            <p>Birthday: ${date.getMonth()}/${date.getDate()}/${date.getFullYear()}</p>
         </div>
         `;
 
@@ -65,6 +65,7 @@ function displayModal(index){
 };
 
 //Event listeners//
+//This event listener should pop up when information is clicked in the card area//
 gridContainer.addEventListener('click', (e) => {
     if(e.target !== gridContainer){
         const card = e.target.closest('.card');
@@ -77,3 +78,4 @@ gridContainer.addEventListener('click', (e) => {
 modalClose.addEventListener('click', () => {
     overlay.classList.add('hidden');
 });
+
